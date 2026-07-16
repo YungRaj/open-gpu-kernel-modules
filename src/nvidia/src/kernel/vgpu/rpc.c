@@ -61,6 +61,17 @@
 
 #include "griddisplayless/objgriddisplayless.h"
 
+NvU64 g_offsetof_OBJRPC_message_buffer = NV_OFFSETOF(struct OBJRPC, message_buffer);
+NvU64 g_offsetof_OBJRPC_message_buffer_priv = NV_OFFSETOF(struct OBJRPC, message_buffer_priv);
+NvU64 g_offsetof_OBJRPC_pMemDesc_mesg = NV_OFFSETOF(struct OBJRPC, pMemDesc_mesg);
+NvU64 g_offsetof_OBJRPC_maxRpcSize = NV_OFFSETOF(struct OBJRPC, maxRpcSize);
+NvU64 g_offsetof_OBJRPC_largeRpcSize = NV_OFFSETOF(struct OBJRPC, largeRpcSize);
+NvU64 g_offsetof_OBJRPC_message_buffer_uvm = NV_OFFSETOF(struct OBJRPC, message_buffer_uvm);
+NvU64 g_offsetof_OBJRPC_message_buffer_priv_uvm = NV_OFFSETOF(struct OBJRPC, message_buffer_priv_uvm);
+NvU64 g_offsetof_OBJRPC_pMessageQueueInfo = NV_OFFSETOF(struct OBJRPC, pMessageQueueInfo);
+NvU64 g_offsetof_OBJRPC_rpcHistory = NV_OFFSETOF(struct OBJRPC, rpcHistory);
+NvU64 g_offsetof_OBJRPC_rpcHistoryCurrent = NV_OFFSETOF(struct OBJRPC, rpcHistoryCurrent);
+
 #include "nv_sriov_defines.h"
 #include "nvrm_registry.h"
 #include "vgpu/dev_vgpu.h"

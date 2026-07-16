@@ -461,4 +461,6 @@ rmapiInitLockInfo
 #define RM_LOCK_RELEASE_GPU_GROUP_LOCK         RS_LOCK_RELEASE_CUSTOM_LOCK_2
 #define RM_LOCK_RELEASE_RM_SEMA                RS_LOCK_RELEASE_CUSTOM_LOCK_3
 
+extern NvU64 g_offsetof_RM_API_pPrivateContext;
+
 #endif // _RMAPI_H_

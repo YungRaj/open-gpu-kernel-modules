@@ -101,6 +101,17 @@ struct OBJRPC{
     OBJRPCSTRUCTURECOPY rpcStructureCopy;
 };
 
+extern NvU64 g_offsetof_OBJRPC_message_buffer;
+extern NvU64 g_offsetof_OBJRPC_message_buffer_priv;
+extern NvU64 g_offsetof_OBJRPC_pMemDesc_mesg;
+extern NvU64 g_offsetof_OBJRPC_maxRpcSize;
+extern NvU64 g_offsetof_OBJRPC_largeRpcSize;
+extern NvU64 g_offsetof_OBJRPC_message_buffer_uvm;
+extern NvU64 g_offsetof_OBJRPC_message_buffer_priv_uvm;
+extern NvU64 g_offsetof_OBJRPC_pMessageQueueInfo;
+extern NvU64 g_offsetof_OBJRPC_rpcHistory;
+extern NvU64 g_offsetof_OBJRPC_rpcHistoryCurrent;
+
 //
 // Utility macros for composing RPC messages.
 // See <vgpu/dev_vgpu.h> for message formats.

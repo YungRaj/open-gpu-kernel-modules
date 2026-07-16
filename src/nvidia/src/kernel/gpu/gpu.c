@@ -58,6 +58,11 @@
 
 #include "kernel/gpu/nvlink/kernel_nvlink.h"
 
+NvU64 g_offsetof_OBJGPU_gpuInstance = NV_OFFSETOF(struct OBJGPU, gpuInstance);
+NvU64 g_offsetof_OBJGPU_hInternalClient = NV_OFFSETOF(struct OBJGPU, hInternalClient);
+NvU64 g_offsetof_OBJGPU_hInternalSubdevice = NV_OFFSETOF(struct OBJGPU, hInternalSubdevice);
+NvU64 g_offsetof_OBJGPU_pKernelGsp = NV_OFFSETOF(struct OBJGPU, pKernelGsp);
+
 #include "nvmisc.h"
 
 #include "ctrl/ctrl402c.h" // NV402C_CTRL_NUM_I2C_PORTS

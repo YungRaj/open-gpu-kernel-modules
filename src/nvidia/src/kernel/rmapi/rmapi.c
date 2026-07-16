@@ -57,6 +57,8 @@ static RM_API     g_RmApiList[RMAPI_TYPE_MAX];
 static NvBool     g_bResServInit = NV_FALSE;
 static RMAPI_LOCK g_RmApiLock;
 
+NvU64 g_offsetof_RM_API_pPrivateContext = NV_OFFSETOF(RM_API, pPrivateContext);
+
 static NvU64 g_rtd3PmPathThreadId = ~0ULL;
 
 static void _rmapiInitInterface(RM_API *pRmApi, API_SECURITY_INFO *pDefaultSecurityInfo, NvBool bTlsInternal,

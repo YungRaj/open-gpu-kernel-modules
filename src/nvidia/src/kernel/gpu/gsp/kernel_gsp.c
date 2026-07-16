@@ -62,6 +62,9 @@
 #include "nvVer.h"
 #include "gpu/rpc/objrpc.h"
 #include "gpu/timer/objtmr.h"
+
+NvU64 g_offsetof_KernelGsp_pRpc = NV_OFFSETOF(struct KernelGsp, pRpc);
+
 #include "os/os.h"
 #include "gpu/disp/dispsw.h"
 #include "kernel/gpu/timed_sema.h"
