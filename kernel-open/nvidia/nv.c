@@ -6531,3 +6531,8 @@ void NV_API_CALL nv_set_gpu_pg_mask
 
 module_init(nvidia_init_module);
 module_exit(nvidia_exit_module);
+
+// Fuzzer Harness Keepalive (ensure wait_for_harness is tracked by kallsyms)
+volatile int KEEP_ALIVE_harness_status = 0;
+// We only export the int directly because it is safe in nv.c
+EXPORT_SYMBOL(KEEP_ALIVE_harness_status);
