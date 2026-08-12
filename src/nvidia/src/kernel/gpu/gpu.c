@@ -61,7 +61,7 @@
 NvU64 g_offsetof_OBJGPU_gpuInstance = NV_OFFSETOF(struct OBJGPU, gpuInstance);
 NvU64 g_offsetof_OBJGPU_hInternalClient = NV_OFFSETOF(struct OBJGPU, hInternalClient);
 NvU64 g_offsetof_OBJGPU_hInternalSubdevice = NV_OFFSETOF(struct OBJGPU, hInternalSubdevice);
-NvU64 g_offsetof_OBJGPU_pKernelGsp = NV_OFFSETOF(struct OBJGPU, pKernelGsp);
+NvU64 g_offsetof_OBJGPU_pKernelGsp = NV_OFFSETOF(struct OBJGPU, children.named.pKernelGsp);
 
 #include "nvmisc.h"
 
