@@ -2518,9 +2518,9 @@ NV_STATUS NV_API_CALL os_numa_add_gpu_memory
                 }
 
 #ifdef NV_REMOVE_MEMORY_HAS_NID_ARG
-                ret = 0;//offline_and_remove_memory(node, segment_base, segment_size);
+                ret = offline_and_remove_memory(node, segment_base, segment_size);
 #else
-                ret = 0;//offline_and_remove_memory(segment_base, segment_size);
+                ret = offline_and_remove_memory(segment_base, segment_size);
 #endif
                 nv_printf(NV_DBG_SETUP, "NVRM: offline_and_remove_memory() returns: %d for segment_base: 0x%llx, segment_size: 0x%llx\n",
                           ret, segment_base, segment_size);
@@ -2631,11 +2631,11 @@ static void offline_numa_memory_callback
         }
 
 #ifdef NV_REMOVE_MEMORY_HAS_NID_ARG
-        ret = 0;//offline_and_remove_memory(pNumaInfo->nodeId,
+        ret = offline_and_remove_memory(pNumaInfo->nodeId,
                                         segment_base,
                                         segment_size);
 #else
-        ret = 0;//offline_and_remove_memory(segment_base,
+        ret = offline_and_remove_memory(segment_base,
                                         segment_size);
 #endif
         nv_printf(NV_DBG_SETUP, "NVRM: offline_and_remove_memory() returns: %d for segment_base: 0x%llx, segment_size: 0x%llx\n",
