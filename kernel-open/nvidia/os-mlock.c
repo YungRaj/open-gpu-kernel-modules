@@ -43,13 +43,13 @@ static inline int nv_follow_flavors(struct vm_area_struct *vma,
     args.address = address;
     args.vma = vma;
 
-    rc = follow_pfnmap_start(&args);
+    rc = -1;//follow_pfnmap_start
     if (rc)
         return rc;
 
     *pfn = args.pfn;
 
-    follow_pfnmap_end(&args);
+    //follow_pfnmap_end
 
     return 0;
 #elif NV_IS_EXPORT_SYMBOL_PRESENT_follow_pte
